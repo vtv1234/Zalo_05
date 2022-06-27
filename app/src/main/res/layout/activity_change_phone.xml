@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.ChangePhoneActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/changePhoneActivity_appBarLayout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appbar_gradient_bg">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/changePhoneActivity_materialToolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:title="Đổi số điện thoại"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_arrow_left_light"
+            app:navigationIconTint="@color/white"
+            app:titleTextAppearance="@style/TitleActionBar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/changePhoneActivity_frameLayout_context"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

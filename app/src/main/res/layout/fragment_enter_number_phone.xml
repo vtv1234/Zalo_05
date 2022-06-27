@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Auth.Fragments.EnterNumberPhoneFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhập số điện thoại của bạn để tạo tài khoản mới"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:background="@color/transparent_white_270"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_region_code"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/stroke_color_state"
+                app:boxStrokeWidth="2dp"
+                app:hintEnabled="false"
+                app:endIconTint="@color/primary_color"
+                >
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/auto_complete_region_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:textSize="17sp"
+                    android:textColor="@color/primary_color"
+                    android:clickable="false"
+                    android:focusable="false"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_input_number_phone"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/text_input_region_code"
+                android:hint="@string/hint_input_number_phone_text"
+                android:theme="@style/TextInputLayoutAppearance"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/stroke_color_state"
+                app:boxStrokeWidth="2dp"
+                app:counterMaxLength="40"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:hintTextColor="@color/text_hint_color_state">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="40"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

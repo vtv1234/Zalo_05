@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/activity_main.app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appbar_gradient_bg"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/activity_main.toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:title="@string/search_text"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_magnifying_glass_light"
+            app:navigationIconTint="@color/white"
+            app:titleTextAppearance="@style/TitleActionBar"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/activity_main.view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/activity_main.bottom_navigation"
+        android:layout_below="@id/activity_main.app_bar_layout"
+        android:layout_centerInParent="true" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/activity_main.bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="15dp"
+        android:foregroundGravity="bottom"
+        app:itemIconTint="@color/color_state"
+        app:itemTextColor="@color/color_state"
+        app:labelVisibilityMode="selected"
+
+        app:menu="@menu/menu_bottom_navigation_badge" />
+
+</RelativeLayout>

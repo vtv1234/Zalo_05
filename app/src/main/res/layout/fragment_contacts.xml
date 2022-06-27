@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+
+                    android:src="@mipmap/ic_group_user_round" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="@string/friend_request"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:paddingStart="20dp"
+                    tools:ignore="RtlCompat,RtlSymmetry" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_contact_in_device"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:clickable="true"
+                android:onClick="OpenAddContactActivity"
+                tools:ignore="OnClick,UsingOnClickInXml"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_phone_list_book_round" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+
+                    >
+                    <TextView
+                        android:id="@+id/tv_add_contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="@string/Contact_In_Device"
+                        android:textSize="15dp"
+                        android:gravity="start"
+                        android:textAlignment="textStart"
+
+                        tools:ignore="RtlCompat" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Các liên hệ có dùng Zalo"
+                        android:textSize="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

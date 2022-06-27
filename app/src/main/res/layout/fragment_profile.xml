@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragments.ProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/profileFragment_linearLayout_profile"
+        android:background="#F3F4F6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profileFragment_relativeLayout_info"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/profileFragment_linearLayout_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="17dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profileFragment_imageView_avatar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user_solid"
+                    app:shapeAppearanceOverlay="@style/Circular" />
+
+                <LinearLayout
+                    android:id="@+id/profileFragment_imageView_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/profileFragment_textView_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Tên người dùng"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/profileFragment_textView_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text="Xem trang cá nhân"
+                        android:textColor="#97999D"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profileFragment_button_info"
+                style="@style/Button.Transparent"
+                android:layout_width="match_parent"
+                android:layout_height="84dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/profileFragment_linearLayout_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/profileFragment_button_password"
+                style="@style/Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:text=" Đổi mật khẩu"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_lock_keyhole_light"
+                app:iconTint="#52A0FF"
+                android:elevation="0dp"
+                />
+
+            <Button
+                android:id="@+id/profileFragment_button_logout"
+                style="@style/Button.White"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:inputType="text"
+                android:fontFamily="sans-serif"
+                android:text=" Đăng xuất"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_arrow_right_from_bracket_light"
+                app:iconTint="#52A0FF"
+                android:elevation="0dp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

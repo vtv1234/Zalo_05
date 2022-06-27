@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name ="android:windowBackground"> @drawable/splash_screen_background</item>
+    </style>
+
+    <style name="Circular" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="SearchViewThem" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlActivated">@color/primary_color</item>
+    </style>
+
+    <style name="ProgressBarTheme">
+        <item name="colorSecondary">@color/primary_color</item>
+    </style>
+
+    <style name="CustomCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="TitleActionBar" parent="@style/Base.TextAppearance.AppCompat.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SubtitleActionBar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="MyAppTheme.DatePicker" parent="Theme.Zalo_05">
+        <item name="colorControlNormal">@color/primary_color</item>
+    </style>
+
+    <style name="Button.White" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_white</item>
+        <item name="android:insetTop">6dp</item>
+        <item name="android:insetBottom">6dp</item>
+    </style>
+
+    <style name="Button.Transparent" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_transparent</item>
+        <item name="android:insetTop">6dp</item>
+        <item name="android:insetBottom">6dp</item>
+    </style>
+
+    <style name="Button.BlueCorners" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>
+        <item name="android:background">@drawable/border_gradient_button</item>
+        <item name="android:insetTop">5dp</item>
+        <item name="android:insetBottom">3dp</item>
+        <item name="android:insetRight">15dp</item>
+        <item name="android:insetLeft">15dp</item>
+
+    </style>
+</resources>

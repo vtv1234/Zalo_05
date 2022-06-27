@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_add_contact_header_alphabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_contact_image_with_header"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/contacts_selector"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="10dp">
+            <TextView
+                android:id="@+id/tv_add_contact_name_with_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="contact_name"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:textAlignment="textStart"
+
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:id="@+id/tv_zalo_name_with_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên Zalo: Nguyễn Văn A"
+                android:textSize="10dp"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_add_friend_with_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="KẾT BẠN"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                android:textColor="@color/primary_color"
+                android:background="@drawable/flat_circle_textview_bg"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/tv_is_friend_with_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="Đã là bạn"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@null"
+                android:textColor="#3c3c3c"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

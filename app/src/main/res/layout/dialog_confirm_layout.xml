@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <TextView
+        android:id="@+id/dialog_confirm_layout.confirm_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:text="Xác nhận số điện thoại "
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_color"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_otp_auth_text"
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+    >
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_confirm_layout.cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/cancel_text"
+            android:textAllCaps="true"
+            android:backgroundTint="@android:color/transparent"
+            android:textStyle="bold"
+            android:gravity="right"
+            android:textSize="17sp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dialog_confirm_layout.confirm_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="@string/confirm_text"
+            android:textAllCaps="true"
+            android:backgroundTint="@android:color/transparent"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:textSize="17sp"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

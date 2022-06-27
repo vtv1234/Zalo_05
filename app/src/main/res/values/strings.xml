@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">zalo_05</string>
+    <string name="messages">Tin nhắn</string>
+    <string name="contacts">Danh bạ</string>
+    <string name="profile">Cá nhân</string>
+    <string name="search_text">Tìm kiếm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_text">Đăng nhập</string>
+    <string name="register_text">Đăng ký</string>
+    <string name="create_account_text">Tạo tài khoản</string>
+    <string name="hint_input_zalo_name_text">Gồm 2-40 kí tự</string>
+    <string name="rules_set_name_text1">\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<b>Quy định đặt tên trên Zalo</b>.</string>
+    <string name="hint_input_number_phone_text">Nhập số điện thoại</string>
+    <string name="confirm_otp_auth_text">Mã kích hoạt sẽ được gửi tới số điện thoại này</string>
+    <string name="cancel_text">Hủy</string>
+    <string name="confirm_text">Xác nhận</string>
+    <string name="input_code_verify_text">Nhập mã kích hoạt</string>
+    <string name="loading_text">Đang xử lý..</string>
+    <string name="number_phone_text">Số điện thoại</string>
+    <string name="password_text">Mật khẩu</string>
+    <string name="birthdate_gender_text">Ngày sinh và giới tính</string>
+    <string name="gender_text">Giới tính</string>
+    <string name="birthdate_text">Ngày sinh</string>
+    <string name="string_note_three"><b>Lưu ý:</b> Một số điện thoại chỉ được phép gắn với một tài khoản Zalo.</string>
+    <string name="Contact_In_Device">Danh bạ máy</string>
+    <string name="friend_request">Lời mời kết bạn</string>
+    <string name="recent_message_type_record">[Tin nhắn thoại]</string>
+</resources>

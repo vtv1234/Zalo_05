@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Auth.RegisterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/appbar_gradient_bg"
+        >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/activity_register.toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            app:title="@string/create_account_text"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_arrow_left_light"
+            app:navigationIconTint="@color/white"
+            app:titleTextAppearance="@style/TitleActionBar"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activity_register.next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/button_color_state"
+        app:srcCompat="@drawable/ic_arrow_right_regular"
+        app:tint="@color/white"
+        android:enabled="false"
+        app:fabCustomSize="45dp"
+
+        />
+    <!--    <androidx.viewpager2.widget.ViewPager2-->
+    <!--        android:id="@+id/activity_register.view_pager2"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginTop="?attr/actionBarSize"-->
+    <!--        />-->
+    <FrameLayout
+        android:id="@+id/activity_register.content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

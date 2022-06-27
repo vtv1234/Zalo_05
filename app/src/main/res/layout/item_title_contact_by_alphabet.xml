@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_alphabet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textSize="20dp"/>
+    <LinearLayout
+        android:id="@+id/contact_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_contact_image_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/contacts_selector"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_status_1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/color_green"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_contact_name_1"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:text="contact_name"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textAlignment="textStart"
+            android:paddingStart="20dp"
+            tools:ignore="RtlCompat,RtlSymmetry" />
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_call_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontawesome_pro_thin100"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="\uf095"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:id="@+id/tv_video_call_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fontawesome_pro_thin100"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="\uf03d"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

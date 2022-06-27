@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_contact_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/contacts_selector"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_status"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/color_green"
+            android:visibility="visible"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_contact_name"
+        android:layout_weight="3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:text="contact_name"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textAlignment="textStart"
+        android:paddingStart="20dp"
+        tools:ignore="RtlCompat" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontawesome_pro_thin100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="\uf095"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/tv_video_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fontawesome_pro_thin100"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="\uf03d"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
